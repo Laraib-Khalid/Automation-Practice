@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.1 on win32)" generated="2025-03-20T10:46:06.338457" rpa="false" schemaversion="5">
+<suite id="s1" name="Navigation" source="C:\Users\LaraibKhalid\OneDrive - Business Solutions &amp; Services\Desktop\Laraib Data\SQA\Automation\Automation-Practice\navigation.robot">
+<test id="s1-t1" name="Navigation" line="5">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>3</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-03-20T10:46:07.183891" elapsed="0.000918"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-03-20T10:46:07.185291" elapsed="0.000271"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-20T10:46:07.186241" level="INFO">Opening browser 'Chrome' to base url 'https://petstore.octoperf.com/actions/Catalog.action'.</msg>
+<arg>https://petstore.octoperf.com/actions/Catalog.action</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-03-20T10:46:07.185914" elapsed="23.416427"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-03-20T10:46:30.602739" elapsed="3.044295"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2025-03-20T10:46:33.647867" level="INFO">Clicking link 'xpath=//div[@id="Menu"]//descendant::a[2]'.</msg>
+<arg>xpath=//div[@id="Menu"]//descendant::a[2]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-20T10:46:33.647433" elapsed="13.565616"/>
+</kw>
+<kw name="Go Back" owner="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" start="2025-03-20T10:46:47.213552" elapsed="3.029119"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-03-20T10:46:56.275604" level="INFO">${TEXT} = Sign In</msg>
+<var>${TEXT}</var>
+<arg>xpath=//a[text()='Sign In']</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-20T10:46:50.243222" elapsed="6.032444"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Link is: ${TEXT}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-20T10:46:56.276056" elapsed="0.000413"/>
+</kw>
+<kw name="Get WebElement" owner="SeleniumLibrary">
+<msg time="2025-03-20T10:46:59.292169" level="INFO">${FISH} = &lt;selenium.webdriver.remote.webelement.WebElement (session="71dbc2d97053561f5c35f216dd778099", element="f.D497FAB7DE28B6431755F4AFBF7D5C47.d.AC860F2E06DA5B701D9D9C4A93040846.e.88")&gt;</msg>
+<var>${FISH}</var>
+<arg>xpath=//*[@id="QuickLinks"]/a[1]</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<status status="PASS" start="2025-03-20T10:46:56.276799" elapsed="3.015464"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2025-03-20T10:46:59.293308" level="INFO">Clicking link '&lt;selenium.webdriver.remote.webelement.WebElement (session="71dbc2d97053561f5c35f216dd778099", element="f.D497FAB7DE28B6431755F4AFBF7D5C47.d.AC860F2E06DA5B701D9D9C4A93040846.e.88")&gt;'.</msg>
+<arg>${FISH}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-20T10:46:59.292963" elapsed="4.643872"/>
+</kw>
+<kw name="Go Back" owner="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" start="2025-03-20T10:47:03.937271" elapsed="3.027024"/>
+</kw>
+<kw name="Reload Page" owner="SeleniumLibrary">
+<doc>Simulates user reloading page.</doc>
+<status status="PASS" start="2025-03-20T10:47:06.964656" elapsed="3.400046"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-03-20T10:47:10.365536" level="INFO">Executing JavaScript:
+window.history.forward();
+Without any arguments.</msg>
+<arg>window.history.forward();</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-03-20T10:47:10.365098" elapsed="3.028963"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-03-20T10:47:19.424407" level="INFO">${TEXT_DATA} = Elevate you load-testing with OctoPerf!</msg>
+<var>${TEXT_DATA}</var>
+<arg>xpath=//div[@id="CTA"]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-20T10:47:13.394634" elapsed="6.029838"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Link Data is: ${TEXT_DATA}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-20T10:47:19.424859" elapsed="0.000425"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2025-03-20T10:47:25.522167" level="INFO">${VALUE} = Search</msg>
+<var>${VALUE}</var>
+<arg>xpath=//input[@name='searchProducts']</arg>
+<arg>value</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2025-03-20T10:47:19.425627" elapsed="6.096598"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Value is:${VALUE}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-20T10:47:25.522554" elapsed="0.000430"/>
+</kw>
+<kw name="Get WebElement" owner="SeleniumLibrary">
+<msg time="2025-03-20T10:47:28.536826" level="INFO">${single_link} = &lt;selenium.webdriver.remote.webelement.WebElement (session="71dbc2d97053561f5c35f216dd778099", element="f.D497FAB7DE28B6431755F4AFBF7D5C47.d.D1ED165DF88A1ED8332795F87834EB7B.e.131")&gt;</msg>
+<var>${single_link}</var>
+<arg>xpath=//*[@id="Catalog"]//table//tr//td</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<status status="PASS" start="2025-03-20T10:47:25.523485" elapsed="3.013434"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Single Link is: ${single_link.text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-20T10:47:28.537387" elapsed="3.010796"/>
+</kw>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-03-20T10:47:34.559375" level="INFO">${links} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="71dbc2d97053561f5c35f216dd778099", element="f.D497FAB7DE28B6431755F4AFBF7D5C47.d.D1ED165DF88A1ED8332795F87834EB7B.e.131")&gt;, &lt;selenium.webdri...</msg>
+<var>${links}</var>
+<arg>xpath=//*[@id="Catalog"]//table//tr//td</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-03-20T10:47:31.548609" elapsed="3.010848"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Link Text is: ${link.text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-20T10:47:34.560262" elapsed="3.011486"/>
+</kw>
+<var name="${link}">&lt;selenium.webdriver.remote.webelement.WebElement (session="71dbc2d97053561f5c35f216dd778099", element="f.D497FAB7DE28B6431755F4AFBF7D5C47.d.D1ED165DF88A1ED8332795F87834EB7B.e.131")&gt;</var>
+<status status="PASS" start="2025-03-20T10:47:34.560042" elapsed="3.011831"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Link Text is: ${link.text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-20T10:47:37.572260" elapsed="3.011548"/>
+</kw>
+<var name="${link}">&lt;selenium.webdriver.remote.webelement.WebElement (session="71dbc2d97053561f5c35f216dd778099", element="f.D497FAB7DE28B6431755F4AFBF7D5C47.d.D1ED165DF88A1ED8332795F87834EB7B.e.132")&gt;</var>
+<status status="PASS" start="2025-03-20T10:47:37.572109" elapsed="3.011845"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Link Text is: ${link.text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-20T10:47:40.584423" elapsed="3.012234"/>
+</kw>
+<var name="${link}">&lt;selenium.webdriver.remote.webelement.WebElement (session="71dbc2d97053561f5c35f216dd778099", element="f.D497FAB7DE28B6431755F4AFBF7D5C47.d.D1ED165DF88A1ED8332795F87834EB7B.e.133")&gt;</var>
+<status status="PASS" start="2025-03-20T10:47:40.584216" elapsed="3.012725"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Link Text is: ${link.text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-20T10:47:43.597281" elapsed="3.010142"/>
+</kw>
+<var name="${link}">&lt;selenium.webdriver.remote.webelement.WebElement (session="71dbc2d97053561f5c35f216dd778099", element="f.D497FAB7DE28B6431755F4AFBF7D5C47.d.D1ED165DF88A1ED8332795F87834EB7B.e.134")&gt;</var>
+<status status="PASS" start="2025-03-20T10:47:43.597151" elapsed="3.010389"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Link Text is: ${link.text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-20T10:47:46.607889" elapsed="3.010914"/>
+</kw>
+<var name="${link}">&lt;selenium.webdriver.remote.webelement.WebElement (session="71dbc2d97053561f5c35f216dd778099", element="f.D497FAB7DE28B6431755F4AFBF7D5C47.d.D1ED165DF88A1ED8332795F87834EB7B.e.135")&gt;</var>
+<status status="PASS" start="2025-03-20T10:47:46.607734" elapsed="3.011197"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Link Text is: ${link.text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-20T10:47:49.619332" elapsed="3.012165"/>
+</kw>
+<var name="${link}">&lt;selenium.webdriver.remote.webelement.WebElement (session="71dbc2d97053561f5c35f216dd778099", element="f.D497FAB7DE28B6431755F4AFBF7D5C47.d.D1ED165DF88A1ED8332795F87834EB7B.e.136")&gt;</var>
+<status status="PASS" start="2025-03-20T10:47:49.619148" elapsed="3.012468"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Link Text is: ${link.text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-20T10:47:52.632020" elapsed="3.011809"/>
+</kw>
+<var name="${link}">&lt;selenium.webdriver.remote.webelement.WebElement (session="71dbc2d97053561f5c35f216dd778099", element="f.D497FAB7DE28B6431755F4AFBF7D5C47.d.D1ED165DF88A1ED8332795F87834EB7B.e.137")&gt;</var>
+<status status="PASS" start="2025-03-20T10:47:52.631820" elapsed="3.012154"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Link Text is: ${link.text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-20T10:47:55.644453" elapsed="3.015016"/>
+</kw>
+<var name="${link}">&lt;selenium.webdriver.remote.webelement.WebElement (session="71dbc2d97053561f5c35f216dd778099", element="f.D497FAB7DE28B6431755F4AFBF7D5C47.d.D1ED165DF88A1ED8332795F87834EB7B.e.138")&gt;</var>
+<status status="PASS" start="2025-03-20T10:47:55.644235" elapsed="3.015412"/>
+</iter>
+<var>${link}</var>
+<value>@{links}</value>
+<status status="PASS" start="2025-03-20T10:47:34.559809" elapsed="24.099975"/>
+</for>
+<status status="PASS" start="2025-03-20T10:46:07.182110" elapsed="111.481546"/>
+</test>
+<status status="PASS" start="2025-03-20T10:46:06.341345" elapsed="112.334655"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Navigation" id="s1" pass="1" fail="0" skip="0">Navigation</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
