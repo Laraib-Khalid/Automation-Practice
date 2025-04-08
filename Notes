@@ -4,3 +4,8 @@ pip install -U robotframework-pabot
 
 Calling:
 pabot --processes 2 --outputdir Results Automation/*.robot
+
+
+
+Robot Calling:
+robot -d Results Automation/browser.robot
