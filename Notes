@@ -1,0 +1,6 @@
+Install RobotFramework-Pabot Library:
+pip install -U robotframework-pabot
+
+
+Calling:
+pabot --processes 2 Automation/*.robot

@@ -1,212 +1,1211 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.1 on win32)" generated="2025-03-20T10:46:06.338457" rpa="false" schemaversion="5">
-<suite id="s1" name="Navigation" source="C:\Users\LaraibKhalid\OneDrive - Business Solutions &amp; Services\Desktop\Laraib Data\SQA\Automation\Automation-Practice\navigation.robot">
-<test id="s1-t1" name="Navigation" line="5">
-<kw name="Set Selenium Speed" owner="SeleniumLibrary">
-<arg>3</arg>
-<doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" start="2025-03-20T10:46:07.183891" elapsed="0.000918"/>
-</kw>
-<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
-<arg>10</arg>
-<doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" start="2025-03-20T10:46:07.185291" elapsed="0.000271"/>
-</kw>
+<robot generator="Rebot 7.2.2 (Python 3.13.1 on win32)" generated="2025-04-08T12:10:57.885703" rpa="false" schemaversion="5">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="Browser" source="C:\Users\LaraibKhalid\OneDrive - Business Solutions &amp; Services\Desktop\Laraib Data\SQA\Automation\Automation-Practice\Automation\browser.robot">
+<test id="s1-s1-t1" name="Open and Close Browser" line="6">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-03-20T10:46:07.186241" level="INFO">Opening browser 'Chrome' to base url 'https://petstore.octoperf.com/actions/Catalog.action'.</msg>
-<arg>https://petstore.octoperf.com/actions/Catalog.action</arg>
+<msg time="2025-04-08T12:08:50.034595" level="INFO">Opening browser 'Chrome' to base url 'https://designer.mocky.io/'.</msg>
+<arg>https://designer.mocky.io/</arg>
 <arg>Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-03-20T10:46:07.185914" elapsed="23.416427"/>
+<status status="PASS" start="2025-04-08T12:08:50.034190" elapsed="2.362957"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-03-20T10:46:30.602739" elapsed="3.044295"/>
+<status status="PASS" start="2025-04-08T12:08:52.397975" elapsed="4.607410"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-04-08T12:08:57.006644" level="INFO">Opening browser 'Chrome' to base url 'https://petstore.octoperf.com/actions/Account.action?newAccountForm='.</msg>
+<arg>https://petstore.octoperf.com/actions/Account.action?newAccountForm=</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-04-08T12:08:57.005816" elapsed="2.696822"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-04-08T12:08:59.703162" elapsed="0.034665"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-04-08T12:08:59.738060" elapsed="4.497001"/>
+</kw>
+<status status="PASS" start="2025-04-08T12:08:50.032863" elapsed="14.202407"/>
+</test>
+<test id="s1-s1-t2" name="Open and Switch Browser" line="13">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-04-08T12:09:04.237203" level="INFO">Opening browser 'Chrome' to base url 'https://petstore.octoperf.com/actions/Account.action?newAccountForm='.</msg>
+<arg>https://petstore.octoperf.com/actions/Account.action?newAccountForm=</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-04-08T12:09:04.236811" elapsed="3.862058"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-04-08T12:09:08.099196" elapsed="0.036616"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-04-08T12:09:08.136551" level="INFO">Opening browser 'Chrome' to base url 'https://designer.mocky.io/'.</msg>
+<arg>https://designer.mocky.io/</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-04-08T12:09:08.136181" elapsed="7.032965"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-04-08T12:09:15.169373" elapsed="0.033943"/>
+</kw>
+<kw name="Switch Browser" owner="SeleniumLibrary">
+<msg time="2025-04-08T12:09:15.360696" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="0-selenium-screenshot-1.png"&gt;&lt;img src="0-selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-04-08T12:09:15.360932" level="FAIL">No browser with index or alias '0' found.</msg>
+<arg>0</arg>
+<doc>Switches between active browsers using ``index_or_alias``.</doc>
+<status status="FAIL" start="2025-04-08T12:09:15.203563" elapsed="8.330447">No browser with index or alias '0' found.</status>
+</kw>
+<status status="FAIL" start="2025-04-08T12:09:04.235625" elapsed="19.298705">No browser with index or alias '0' found.</status>
+</test>
+<status status="FAIL" start="2025-04-08T12:08:49.650000" elapsed="33.501000"/>
+</suite>
+<suite id="s1-s2" name="Frames" source="C:\Users\LaraibKhalid\OneDrive - Business Solutions &amp; Services\Desktop\Laraib Data\SQA\Automation\Automation-Practice\Automation\Frames.robot">
+<test id="s1-s2-t1" name="Handling Frames" line="37">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-04-08T12:09:28.808453" level="INFO">Opening browser 'Chrome' to base url 'https://letcode.in/frame'.</msg>
+<arg>https://letcode.in/frame</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-04-08T12:09:28.808043" elapsed="4.103600"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-04-08T12:09:32.912118" elapsed="0.041074"/>
+</kw>
+<kw name="Select Frame" owner="SeleniumLibrary">
+<msg time="2025-04-08T12:09:32.954063" level="INFO">Selecting frame '//iframe[@name="firstFr"]'.</msg>
+<arg>//iframe[@name="firstFr"]</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<status status="PASS" start="2025-04-08T12:09:32.953422" elapsed="0.087226"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-08T12:09:33.041610" level="INFO">Typing text 'Test' into text field '//input[@name="fname"]'.</msg>
+<arg>//input[@name="fname"]</arg>
+<arg>Test</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-08T12:09:33.041065" elapsed="0.145340"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-08T12:09:33.187113" level="INFO">Typing text 'Practice' into text field '//input[@name="lname"]'.</msg>
+<arg>//input[@name="lname"]</arg>
+<arg>Practice</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-08T12:09:33.186673" elapsed="0.144944"/>
+</kw>
+<kw name="Select Frame" owner="SeleniumLibrary">
+<msg time="2025-04-08T12:09:33.332382" level="INFO">Selecting frame '//div[@class="container has-text-centered mb-4 mt-6"]//iframe'.</msg>
+<arg>//div[@class="container has-text-centered mb-4 mt-6"]//iframe</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<status status="PASS" start="2025-04-08T12:09:33.331872" elapsed="0.050396"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-08T12:09:33.382881" level="INFO">Typing text 'testpractice@gmail.com' into text field '//input[@name="email"]'.</msg>
+<arg>//input[@name="email"]</arg>
+<arg>testpractice@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-08T12:09:33.382537" elapsed="0.188421"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-08T12:09:38.571693" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-08T12:09:33.571177" elapsed="5.000728"/>
+</kw>
+<status status="PASS" start="2025-04-08T12:09:28.806518" elapsed="9.765727"/>
+</test>
+<test id="s1-s2-t2" name="Handling Nested Frames" line="48">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-04-08T12:09:38.574038" level="INFO">Opening url 'https://the-internet.herokuapp.com/nested_frames'</msg>
+<arg>https://the-internet.herokuapp.com/nested_frames</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-04-08T12:09:38.573721" elapsed="1.821213"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-08T12:09:50.395975" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-08T12:09:40.395216" elapsed="10.000972"/>
+</kw>
+<kw name="Select Frame" owner="SeleniumLibrary">
+<msg time="2025-04-08T12:09:50.396752" level="INFO">Selecting frame '//frame[@name="frame-top"]'.</msg>
+<arg>//frame[@name="frame-top"]</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<status status="PASS" start="2025-04-08T12:09:50.396495" elapsed="0.043085"/>
+</kw>
+<kw name="Select Frame" owner="SeleniumLibrary">
+<msg time="2025-04-08T12:09:50.439993" level="INFO">Selecting frame '//frame[@name="frame-left"]'.</msg>
+<arg>//frame[@name="frame-left"]</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<status status="PASS" start="2025-04-08T12:09:50.439752" elapsed="0.037404"/>
+</kw>
+<kw name="Unselect Frame" owner="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" start="2025-04-08T12:09:50.477350" elapsed="0.002634"/>
+</kw>
+<kw name="Select Frame" owner="SeleniumLibrary">
+<msg time="2025-04-08T12:09:50.480338" level="INFO">Selecting frame '//frame[@name="frame-top"]'.</msg>
+<arg>//frame[@name="frame-top"]</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<status status="PASS" start="2025-04-08T12:09:50.480126" elapsed="0.031942"/>
+</kw>
+<kw name="Select Frame" owner="SeleniumLibrary">
+<msg time="2025-04-08T12:09:50.512493" level="INFO">Selecting frame '//frame[@name="frame-middle"]'.</msg>
+<arg>//frame[@name="frame-middle"]</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<status status="PASS" start="2025-04-08T12:09:50.512240" elapsed="0.034606"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2025-04-08T12:09:50.547312" level="INFO">Verifying element '//div[@id="content"]' contains exact text 'MIDDLE'.</msg>
+<arg>//div[@id="content"]</arg>
+<arg>MIDDLE</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2025-04-08T12:09:50.547040" elapsed="0.028181"/>
+</kw>
+<kw name="Unselect Frame" owner="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" start="2025-04-08T12:09:50.575386" elapsed="0.002736"/>
+</kw>
+<kw name="Select Frame" owner="SeleniumLibrary">
+<msg time="2025-04-08T12:09:50.578466" level="INFO">Selecting frame '//frame[@name="frame-top"]'.</msg>
+<arg>//frame[@name="frame-top"]</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<status status="PASS" start="2025-04-08T12:09:50.578258" elapsed="0.032753"/>
+</kw>
+<kw name="Select Frame" owner="SeleniumLibrary">
+<msg time="2025-04-08T12:09:50.611453" level="INFO">Selecting frame '//frame[@name="frame-right"]'.</msg>
+<arg>//frame[@name="frame-right"]</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<status status="PASS" start="2025-04-08T12:09:50.611197" elapsed="0.032295"/>
+</kw>
+<kw name="Unselect Frame" owner="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" start="2025-04-08T12:09:50.643755" elapsed="0.002532"/>
+</kw>
+<kw name="Select Frame" owner="SeleniumLibrary">
+<msg time="2025-04-08T12:09:50.646804" level="INFO">Selecting frame 'xpath://frame[@name="frame-bottom"]'.</msg>
+<arg>xpath://frame[@name="frame-bottom"]</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<status status="PASS" start="2025-04-08T12:09:50.646499" elapsed="0.049288"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-08T12:10:00.696828" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-08T12:09:50.696136" elapsed="10.000863"/>
+</kw>
+<status status="PASS" start="2025-04-08T12:09:38.572822" elapsed="22.124481"/>
+</test>
+<test id="s1-s2-t3" name="Handling iFrames" line="70">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-04-08T12:10:00.698506" level="INFO">Opening url 'https://seleniumbase.io/demo_page'</msg>
+<arg>https://seleniumbase.io/demo_page</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-04-08T12:10:00.698236" elapsed="1.402200"/>
+</kw>
+<kw name="Select Frame" owner="SeleniumLibrary">
+<msg time="2025-04-08T12:10:02.101256" level="INFO">Selecting frame '//iframe[@name="frameName2"]'.</msg>
+<arg>//iframe[@name="frameName2"]</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<status status="PASS" start="2025-04-08T12:10:02.100926" elapsed="0.049304"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2025-04-08T12:10:02.150888" level="INFO">Verifying element '//body//h4' contains exact text 'iFrame Text'.</msg>
+<arg>//body//h4</arg>
+<arg>iFrame Text</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2025-04-08T12:10:02.150496" elapsed="0.034107"/>
+</kw>
+<kw name="Unselect Frame" owner="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" start="2025-04-08T12:10:02.184935" elapsed="0.003420"/>
+</kw>
+<kw name="Select Frame" owner="SeleniumLibrary">
+<msg time="2025-04-08T12:10:02.189073" level="INFO">Selecting frame '//iframe[@name="frameName3"]'.</msg>
+<arg>//iframe[@name="frameName3"]</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<status status="PASS" start="2025-04-08T12:10:02.188656" elapsed="0.042312"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2025-04-08T12:10:02.231706" level="INFO">Selecting checkbox '//input[@id="checkBox6"]'.</msg>
+<arg>//input[@id="checkBox6"]</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-08T12:10:02.231285" elapsed="0.265411"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-08T12:10:12.497965" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-08T12:10:02.496916" elapsed="10.001463"/>
+</kw>
+<status status="PASS" start="2025-04-08T12:10:00.697742" elapsed="11.801340"/>
+</test>
+<status status="PASS" start="2025-04-08T12:09:28.479855" elapsed="44.021135"/>
+</suite>
+<suite id="s1-s3" name="Navigation" source="C:\Users\LaraibKhalid\OneDrive - Business Solutions &amp; Services\Desktop\Laraib Data\SQA\Automation\Automation-Practice\Automation\navigation.robot">
+<test id="s1-s3-t1" name="Navigation" line="5">
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-04-08T12:10:15.587133" elapsed="0.000284"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-04-08T12:10:15.587795" level="INFO">Opening browser 'Chrome' to base url 'https://petstore.octoperf.com/actions/Catalog.action'.</msg>
+<arg>https://petstore.octoperf.com/actions/Catalog.action</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-04-08T12:10:15.587596" elapsed="2.604458"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-04-08T12:10:18.192411" elapsed="0.040469"/>
 </kw>
 <kw name="Click Link" owner="SeleniumLibrary">
-<msg time="2025-03-20T10:46:33.647867" level="INFO">Clicking link 'xpath=//div[@id="Menu"]//descendant::a[2]'.</msg>
+<msg time="2025-04-08T12:10:18.233929" level="INFO">Clicking link 'xpath=//div[@id="Menu"]//descendant::a[2]'.</msg>
 <arg>xpath=//div[@id="Menu"]//descendant::a[2]</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<status status="PASS" start="2025-03-20T10:46:33.647433" elapsed="13.565616"/>
+<status status="PASS" start="2025-04-08T12:10:18.233183" elapsed="0.323671"/>
 </kw>
 <kw name="Go Back" owner="SeleniumLibrary">
 <doc>Simulates the user clicking the back button on their browser.</doc>
-<status status="PASS" start="2025-03-20T10:46:47.213552" elapsed="3.029119"/>
+<status status="PASS" start="2025-04-08T12:10:18.557095" elapsed="0.028845"/>
 </kw>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-03-20T10:46:56.275604" level="INFO">${TEXT} = Sign In</msg>
+<msg time="2025-04-08T12:10:18.638742" level="INFO">${TEXT} = Sign In</msg>
 <var>${TEXT}</var>
 <arg>xpath=//a[text()='Sign In']</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-03-20T10:46:50.243222" elapsed="6.032444"/>
+<status status="PASS" start="2025-04-08T12:10:18.586300" elapsed="0.052497"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>Link is: ${TEXT}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-20T10:46:56.276056" elapsed="0.000413"/>
+<status status="PASS" start="2025-04-08T12:10:18.638984" elapsed="0.000306"/>
 </kw>
 <kw name="Get WebElement" owner="SeleniumLibrary">
-<msg time="2025-03-20T10:46:59.292169" level="INFO">${FISH} = &lt;selenium.webdriver.remote.webelement.WebElement (session="71dbc2d97053561f5c35f216dd778099", element="f.D497FAB7DE28B6431755F4AFBF7D5C47.d.AC860F2E06DA5B701D9D9C4A93040846.e.88")&gt;</msg>
+<msg time="2025-04-08T12:10:18.650102" level="INFO">${FISH} = &lt;selenium.webdriver.remote.webelement.WebElement (session="c8a5a1fc2b547b1fb05506b564e4bbe9", element="f.A0DE23211AA47A80904BBB0523D98865.d.0AC48C7C4936B81B21C84706A321EC13.e.86")&gt;</msg>
 <var>${FISH}</var>
 <arg>xpath=//*[@id="QuickLinks"]/a[1]</arg>
 <doc>Returns the first WebElement matching the given ``locator``.</doc>
-<status status="PASS" start="2025-03-20T10:46:56.276799" elapsed="3.015464"/>
+<status status="PASS" start="2025-04-08T12:10:18.639441" elapsed="0.010715"/>
 </kw>
 <kw name="Click Link" owner="SeleniumLibrary">
-<msg time="2025-03-20T10:46:59.293308" level="INFO">Clicking link '&lt;selenium.webdriver.remote.webelement.WebElement (session="71dbc2d97053561f5c35f216dd778099", element="f.D497FAB7DE28B6431755F4AFBF7D5C47.d.AC860F2E06DA5B701D9D9C4A93040846.e.88")&gt;'.</msg>
+<msg time="2025-04-08T12:10:18.650570" level="INFO">Clicking link '&lt;selenium.webdriver.remote.webelement.WebElement (session="c8a5a1fc2b547b1fb05506b564e4bbe9", element="f.A0DE23211AA47A80904BBB0523D98865.d.0AC48C7C4936B81B21C84706A321EC13.e.86")&gt;'.</msg>
 <arg>${FISH}</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<status status="PASS" start="2025-03-20T10:46:59.292963" elapsed="4.643872"/>
+<status status="PASS" start="2025-04-08T12:10:18.650317" elapsed="0.258206"/>
 </kw>
 <kw name="Go Back" owner="SeleniumLibrary">
 <doc>Simulates the user clicking the back button on their browser.</doc>
-<status status="PASS" start="2025-03-20T10:47:03.937271" elapsed="3.027024"/>
+<status status="PASS" start="2025-04-08T12:10:18.908821" elapsed="0.032723"/>
 </kw>
 <kw name="Reload Page" owner="SeleniumLibrary">
 <doc>Simulates user reloading page.</doc>
-<status status="PASS" start="2025-03-20T10:47:06.964656" elapsed="3.400046"/>
+<status status="PASS" start="2025-04-08T12:10:18.941954" elapsed="0.201306"/>
 </kw>
 <kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2025-03-20T10:47:10.365536" level="INFO">Executing JavaScript:
+<msg time="2025-04-08T12:10:19.144469" level="INFO">Executing JavaScript:
 window.history.forward();
 Without any arguments.</msg>
 <arg>window.history.forward();</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2025-03-20T10:47:10.365098" elapsed="3.028963"/>
+<status status="PASS" start="2025-04-08T12:10:19.143658" elapsed="0.029111"/>
 </kw>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-03-20T10:47:19.424407" level="INFO">${TEXT_DATA} = Elevate you load-testing with OctoPerf!</msg>
+<msg time="2025-04-08T12:10:19.205507" level="INFO">${TEXT_DATA} = Elevate you load-testing with OctoPerf!</msg>
 <var>${TEXT_DATA}</var>
 <arg>xpath=//div[@id="CTA"]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-03-20T10:47:13.394634" elapsed="6.029838"/>
+<status status="PASS" start="2025-04-08T12:10:19.172992" elapsed="0.032563"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>Link Data is: ${TEXT_DATA}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-20T10:47:19.424859" elapsed="0.000425"/>
+<status status="PASS" start="2025-04-08T12:10:19.205752" elapsed="0.000278"/>
 </kw>
 <kw name="Get Element Attribute" owner="SeleniumLibrary">
-<msg time="2025-03-20T10:47:25.522167" level="INFO">${VALUE} = Search</msg>
+<msg time="2025-04-08T12:10:19.232352" level="INFO">${VALUE} = Search</msg>
 <var>${VALUE}</var>
 <arg>xpath=//input[@name='searchProducts']</arg>
 <arg>value</arg>
 <doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
-<status status="PASS" start="2025-03-20T10:47:19.425627" elapsed="6.096598"/>
+<status status="PASS" start="2025-04-08T12:10:19.206150" elapsed="0.026251"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>Value is:${VALUE}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-20T10:47:25.522554" elapsed="0.000430"/>
+<status status="PASS" start="2025-04-08T12:10:19.232555" elapsed="0.000317"/>
 </kw>
 <kw name="Get WebElement" owner="SeleniumLibrary">
-<msg time="2025-03-20T10:47:28.536826" level="INFO">${single_link} = &lt;selenium.webdriver.remote.webelement.WebElement (session="71dbc2d97053561f5c35f216dd778099", element="f.D497FAB7DE28B6431755F4AFBF7D5C47.d.D1ED165DF88A1ED8332795F87834EB7B.e.131")&gt;</msg>
+<msg time="2025-04-08T12:10:19.246619" level="INFO">${single_link} = &lt;selenium.webdriver.remote.webelement.WebElement (session="c8a5a1fc2b547b1fb05506b564e4bbe9", element="f.A0DE23211AA47A80904BBB0523D98865.d.179D37D1FF4D3BC64B18697169C4AFAE.e.129")&gt;</msg>
 <var>${single_link}</var>
 <arg>xpath=//*[@id="Catalog"]//table//tr//td</arg>
 <doc>Returns the first WebElement matching the given ``locator``.</doc>
-<status status="PASS" start="2025-03-20T10:47:25.523485" elapsed="3.013434"/>
+<status status="PASS" start="2025-04-08T12:10:19.232991" elapsed="0.013677"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>Single Link is: ${single_link.text}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-20T10:47:28.537387" elapsed="3.010796"/>
+<status status="PASS" start="2025-04-08T12:10:19.246814" elapsed="0.012569"/>
 </kw>
 <kw name="Get WebElements" owner="SeleniumLibrary">
-<msg time="2025-03-20T10:47:34.559375" level="INFO">${links} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="71dbc2d97053561f5c35f216dd778099", element="f.D497FAB7DE28B6431755F4AFBF7D5C47.d.D1ED165DF88A1ED8332795F87834EB7B.e.131")&gt;, &lt;selenium.webdri...</msg>
+<msg time="2025-04-08T12:10:19.270302" level="INFO">${links} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="c8a5a1fc2b547b1fb05506b564e4bbe9", element="f.A0DE23211AA47A80904BBB0523D98865.d.179D37D1FF4D3BC64B18697169C4AFAE.e.129")&gt;, &lt;selenium.webdri...</msg>
 <var>${links}</var>
 <arg>xpath=//*[@id="Catalog"]//table//tr//td</arg>
 <doc>Returns a list of WebElement objects matching the ``locator``.</doc>
-<status status="PASS" start="2025-03-20T10:47:31.548609" elapsed="3.010848"/>
+<status status="PASS" start="2025-04-08T12:10:19.259664" elapsed="0.010717"/>
 </kw>
 <for flavor="IN">
 <iter>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>Link Text is: ${link.text}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-20T10:47:34.560262" elapsed="3.011486"/>
+<status status="PASS" start="2025-04-08T12:10:19.271121" elapsed="0.013608"/>
 </kw>
-<var name="${link}">&lt;selenium.webdriver.remote.webelement.WebElement (session="71dbc2d97053561f5c35f216dd778099", element="f.D497FAB7DE28B6431755F4AFBF7D5C47.d.D1ED165DF88A1ED8332795F87834EB7B.e.131")&gt;</var>
-<status status="PASS" start="2025-03-20T10:47:34.560042" elapsed="3.011831"/>
+<var name="${link}">&lt;selenium.webdriver.remote.webelement.WebElement (session="c8a5a1fc2b547b1fb05506b564e4bbe9", element="f.A0DE23211AA47A80904BBB0523D98865.d.179D37D1FF4D3BC64B18697169C4AFAE.e.129")&gt;</var>
+<status status="PASS" start="2025-04-08T12:10:19.270906" elapsed="0.013910"/>
 </iter>
 <iter>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>Link Text is: ${link.text}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-20T10:47:37.572260" elapsed="3.011548"/>
+<status status="PASS" start="2025-04-08T12:10:19.285159" elapsed="0.012330"/>
 </kw>
-<var name="${link}">&lt;selenium.webdriver.remote.webelement.WebElement (session="71dbc2d97053561f5c35f216dd778099", element="f.D497FAB7DE28B6431755F4AFBF7D5C47.d.D1ED165DF88A1ED8332795F87834EB7B.e.132")&gt;</var>
-<status status="PASS" start="2025-03-20T10:47:37.572109" elapsed="3.011845"/>
+<var name="${link}">&lt;selenium.webdriver.remote.webelement.WebElement (session="c8a5a1fc2b547b1fb05506b564e4bbe9", element="f.A0DE23211AA47A80904BBB0523D98865.d.179D37D1FF4D3BC64B18697169C4AFAE.e.130")&gt;</var>
+<status status="PASS" start="2025-04-08T12:10:19.284976" elapsed="0.012614"/>
 </iter>
 <iter>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>Link Text is: ${link.text}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-20T10:47:40.584423" elapsed="3.012234"/>
+<status status="PASS" start="2025-04-08T12:10:19.297947" elapsed="0.011339"/>
 </kw>
-<var name="${link}">&lt;selenium.webdriver.remote.webelement.WebElement (session="71dbc2d97053561f5c35f216dd778099", element="f.D497FAB7DE28B6431755F4AFBF7D5C47.d.D1ED165DF88A1ED8332795F87834EB7B.e.133")&gt;</var>
-<status status="PASS" start="2025-03-20T10:47:40.584216" elapsed="3.012725"/>
+<var name="${link}">&lt;selenium.webdriver.remote.webelement.WebElement (session="c8a5a1fc2b547b1fb05506b564e4bbe9", element="f.A0DE23211AA47A80904BBB0523D98865.d.179D37D1FF4D3BC64B18697169C4AFAE.e.131")&gt;</var>
+<status status="PASS" start="2025-04-08T12:10:19.297766" elapsed="0.011701"/>
 </iter>
 <iter>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>Link Text is: ${link.text}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-20T10:47:43.597281" elapsed="3.010142"/>
+<status status="PASS" start="2025-04-08T12:10:19.310798" elapsed="0.010733"/>
 </kw>
-<var name="${link}">&lt;selenium.webdriver.remote.webelement.WebElement (session="71dbc2d97053561f5c35f216dd778099", element="f.D497FAB7DE28B6431755F4AFBF7D5C47.d.D1ED165DF88A1ED8332795F87834EB7B.e.134")&gt;</var>
-<status status="PASS" start="2025-03-20T10:47:43.597151" elapsed="3.010389"/>
+<var name="${link}">&lt;selenium.webdriver.remote.webelement.WebElement (session="c8a5a1fc2b547b1fb05506b564e4bbe9", element="f.A0DE23211AA47A80904BBB0523D98865.d.179D37D1FF4D3BC64B18697169C4AFAE.e.132")&gt;</var>
+<status status="PASS" start="2025-04-08T12:10:19.310448" elapsed="0.011164"/>
 </iter>
 <iter>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>Link Text is: ${link.text}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-20T10:47:46.607889" elapsed="3.010914"/>
+<status status="PASS" start="2025-04-08T12:10:19.321941" elapsed="0.011539"/>
 </kw>
-<var name="${link}">&lt;selenium.webdriver.remote.webelement.WebElement (session="71dbc2d97053561f5c35f216dd778099", element="f.D497FAB7DE28B6431755F4AFBF7D5C47.d.D1ED165DF88A1ED8332795F87834EB7B.e.135")&gt;</var>
-<status status="PASS" start="2025-03-20T10:47:46.607734" elapsed="3.011197"/>
+<var name="${link}">&lt;selenium.webdriver.remote.webelement.WebElement (session="c8a5a1fc2b547b1fb05506b564e4bbe9", element="f.A0DE23211AA47A80904BBB0523D98865.d.179D37D1FF4D3BC64B18697169C4AFAE.e.133")&gt;</var>
+<status status="PASS" start="2025-04-08T12:10:19.321761" elapsed="0.011821"/>
 </iter>
 <iter>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>Link Text is: ${link.text}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-20T10:47:49.619332" elapsed="3.012165"/>
+<status status="PASS" start="2025-04-08T12:10:19.333890" elapsed="0.011223"/>
 </kw>
-<var name="${link}">&lt;selenium.webdriver.remote.webelement.WebElement (session="71dbc2d97053561f5c35f216dd778099", element="f.D497FAB7DE28B6431755F4AFBF7D5C47.d.D1ED165DF88A1ED8332795F87834EB7B.e.136")&gt;</var>
-<status status="PASS" start="2025-03-20T10:47:49.619148" elapsed="3.012468"/>
+<var name="${link}">&lt;selenium.webdriver.remote.webelement.WebElement (session="c8a5a1fc2b547b1fb05506b564e4bbe9", element="f.A0DE23211AA47A80904BBB0523D98865.d.179D37D1FF4D3BC64B18697169C4AFAE.e.134")&gt;</var>
+<status status="PASS" start="2025-04-08T12:10:19.333731" elapsed="0.011463"/>
 </iter>
 <iter>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>Link Text is: ${link.text}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-20T10:47:52.632020" elapsed="3.011809"/>
+<status status="PASS" start="2025-04-08T12:10:19.345489" elapsed="0.011561"/>
 </kw>
-<var name="${link}">&lt;selenium.webdriver.remote.webelement.WebElement (session="71dbc2d97053561f5c35f216dd778099", element="f.D497FAB7DE28B6431755F4AFBF7D5C47.d.D1ED165DF88A1ED8332795F87834EB7B.e.137")&gt;</var>
-<status status="PASS" start="2025-03-20T10:47:52.631820" elapsed="3.012154"/>
+<var name="${link}">&lt;selenium.webdriver.remote.webelement.WebElement (session="c8a5a1fc2b547b1fb05506b564e4bbe9", element="f.A0DE23211AA47A80904BBB0523D98865.d.179D37D1FF4D3BC64B18697169C4AFAE.e.135")&gt;</var>
+<status status="PASS" start="2025-04-08T12:10:19.345328" elapsed="0.011815"/>
 </iter>
 <iter>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>Link Text is: ${link.text}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-20T10:47:55.644453" elapsed="3.015016"/>
+<status status="PASS" start="2025-04-08T12:10:19.357421" elapsed="0.014363"/>
 </kw>
-<var name="${link}">&lt;selenium.webdriver.remote.webelement.WebElement (session="71dbc2d97053561f5c35f216dd778099", element="f.D497FAB7DE28B6431755F4AFBF7D5C47.d.D1ED165DF88A1ED8332795F87834EB7B.e.138")&gt;</var>
-<status status="PASS" start="2025-03-20T10:47:55.644235" elapsed="3.015412"/>
+<var name="${link}">&lt;selenium.webdriver.remote.webelement.WebElement (session="c8a5a1fc2b547b1fb05506b564e4bbe9", element="f.A0DE23211AA47A80904BBB0523D98865.d.179D37D1FF4D3BC64B18697169C4AFAE.e.136")&gt;</var>
+<status status="PASS" start="2025-04-08T12:10:19.357277" elapsed="0.014703"/>
 </iter>
 <var>${link}</var>
 <value>@{links}</value>
-<status status="PASS" start="2025-03-20T10:47:34.559809" elapsed="24.099975"/>
+<status status="PASS" start="2025-04-08T12:10:19.270541" elapsed="0.101514"/>
 </for>
-<status status="PASS" start="2025-03-20T10:46:07.182110" elapsed="111.481546"/>
+<status status="PASS" start="2025-04-08T12:10:15.586214" elapsed="3.786035"/>
 </test>
-<status status="PASS" start="2025-03-20T10:46:06.341345" elapsed="112.334655"/>
+<status status="PASS" start="2025-04-08T12:10:15.318940" elapsed="4.053746"/>
+</suite>
+<suite id="s1-s4" name="Practice" source="C:\Users\LaraibKhalid\OneDrive - Business Solutions &amp; Services\Desktop\Laraib Data\SQA\Automation\Automation-Practice\Automation\practice.robot">
+<kw name="Open Test Browser" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-04-08T12:10:20.601987" level="INFO">Opening browser 'Chrome' to base url 'https://designer.mocky.io/'.</msg>
+<arg>https://designer.mocky.io/</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-04-08T12:10:20.601745" elapsed="6.743413"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-04-08T12:10:27.345533" elapsed="0.030230"/>
+</kw>
+<status status="PASS" start="2025-04-08T12:10:20.601047" elapsed="6.775010"/>
+</kw>
+<test id="s1-s4-t1" name="Get Title" line="12">
+<kw name="Get Title" owner="SeleniumLibrary">
+<msg time="2025-04-08T12:10:27.386141" level="INFO">${title} = Mocky: The world's easiest &amp; fastest tool to mock your APIs</msg>
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2025-04-08T12:10:27.377040" elapsed="0.009176"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${title}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-08T12:10:27.386416" elapsed="0.000426"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-04-08T12:10:27.394389" level="INFO">Page title is 'Mocky: The world's easiest &amp; fastest tool to mock your APIs'.</msg>
+<arg>Mocky: The world's easiest &amp; fastest tool to mock your APIs</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2025-04-08T12:10:27.387040" elapsed="0.007518"/>
+</kw>
+<kw name="Should Match" owner="BuiltIn">
+<arg>${title}</arg>
+<arg>Mocky: The world's easiest &amp; fastest tool to mock your APIs</arg>
+<doc>Fails if the given ``string`` does not match the given ``pattern``.</doc>
+<status status="PASS" start="2025-04-08T12:10:27.395087" elapsed="0.001166"/>
+</kw>
+<status status="PASS" start="2025-04-08T12:10:27.376228" elapsed="0.020271"/>
+</test>
+<test id="s1-s4-t2" name="Get Page Source" line="19">
+<kw name="Get Source" owner="SeleniumLibrary">
+<msg time="2025-04-08T12:10:27.404400" level="INFO">${page_source} = &lt;html lang="en"&gt;&lt;head&gt;&lt;meta charset="utf-8"&gt;&lt;title&gt;Mocky: The world's easiest &amp;amp; fastest tool to mock your APIs&lt;/title&gt;&lt;meta name="description" content="Don't wait for the backend to be ready, gene...</msg>
+<var>${page_source}</var>
+<doc>Returns the entire HTML source of the current page or frame.</doc>
+<status status="PASS" start="2025-04-08T12:10:27.397615" elapsed="0.006851"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-08T12:10:27.405125" level="INFO">Page source is: &lt;html lang="en"&gt;&lt;head&gt;&lt;meta charset="utf-8"&gt;&lt;title&gt;Mocky: The world's easiest &amp;amp; fastest tool to mock your APIs&lt;/title&gt;&lt;meta name="description" content="Don't wait for the backend to be ready, generate custom API responses with Mocky and start working on your application straightaway"&gt;&lt;style type="text/css"&gt;svg:not(:root).svg-inline--fa {
+  overflow: visible;
+}
+
+.svg-inline--fa {
+  display: inline-block;
+  font-size: inherit;
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+}
+.svg-inline--fa.fa-lg {
+  vertical-align: -0.225em;
+}
+.svg-inline--fa.fa-w-1 {
+  width: 0.0625em;
+}
+.svg-inline--fa.fa-w-2 {
+  width: 0.125em;
+}
+.svg-inline--fa.fa-w-3 {
+  width: 0.1875em;
+}
+.svg-inline--fa.fa-w-4 {
+  width: 0.25em;
+}
+.svg-inline--fa.fa-w-5 {
+  width: 0.3125em;
+}
+.svg-inline--fa.fa-w-6 {
+  width: 0.375em;
+}
+.svg-inline--fa.fa-w-7 {
+  width: 0.4375em;
+}
+.svg-inline--fa.fa-w-8 {
+  width: 0.5em;
+}
+.svg-inline--fa.fa-w-9 {
+  width: 0.5625em;
+}
+.svg-inline--fa.fa-w-10 {
+  width: 0.625em;
+}
+.svg-inline--fa.fa-w-11 {
+  width: 0.6875em;
+}
+.svg-inline--fa.fa-w-12 {
+  width: 0.75em;
+}
+.svg-inline--fa.fa-w-13 {
+  width: 0.8125em;
+}
+.svg-inline--fa.fa-w-14 {
+  width: 0.875em;
+}
+.svg-inline--fa.fa-w-15 {
+  width: 0.9375em;
+}
+.svg-inline--fa.fa-w-16 {
+  width: 1em;
+}
+.svg-inline--fa.fa-w-17 {
+  width: 1.0625em;
+}
+.svg-inline--fa.fa-w-18 {
+  width: 1.125em;
+}
+.svg-inline--fa.fa-w-19 {
+  width: 1.1875em;
+}
+.svg-inline--fa.fa-w-20 {
+  width: 1.25em;
+}
+.svg-inline--fa.fa-pull-left {
+  margin-right: 0.3em;
+  width: auto;
+}
+.svg-inline--fa.fa-pull-right {
+  margin-left: 0.3em;
+  width: auto;
+}
+.svg-inline--fa.fa-border {
+  height: 1.5em;
+}
+.svg-inline--fa.fa-li {
+  width: 2em;
+}
+.svg-inline--fa.fa-fw {
+  width: 1.25em;
+}
+
+.fa-layers svg.svg-inline--fa {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.fa-layers {
+  display: inline-block;
+  height: 1em;
+  position: relative;
+  text-align: center;
+  vertical-align: -0.125em;
+  width: 1em;
+}
+.fa-layers svg.svg-inline--fa {
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.fa-layers-counter, .fa-layers-text {
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+}
+
+.fa-layers-text {
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.fa-layers-counter {
+  background-color: #ff253a;
+  border-radius: 1em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+  height: 1.5em;
+  line-height: 1;
+  max-width: 5em;
+  min-width: 1.5em;
+  overflow: hidden;
+  padding: 0.25em;
+  right: 0;
+  text-overflow: ellipsis;
+  top: 0;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.fa-layers-bottom-right {
+  bottom: 0;
+  right: 0;
+  top: auto;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+}
+
+.fa-layers-bottom-left {
+  bottom: 0;
+  left: 0;
+  right: auto;
+  top: auto;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+.fa-layers-top-right {
+  right: 0;
+  top: 0;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.fa-layers-top-left {
+  left: 0;
+  right: auto;
+  top: 0;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+
+.fa-lg {
+  font-size: 1.3333333333em;
+  line-height: 0.75em;
+  vertical-align: -0.0667em;
+}
+
+.fa-xs {
+  font-size: 0.75em;
+}
+
+.fa-sm {
+  font-size: 0.875em;
+}
+
+.fa-1x {
+  font-size: 1em;
+}
+
+.fa-2x {
+  font-size: 2em;
+}
+
+.fa-3x {
+  font-size: 3em;
+}
+
+.fa-4x {
+  font-size: 4em;
+}
+
+.fa-5x {
+  font-size: 5em;
+}
+
+.fa-6x {
+  font-size: 6em;
+}
+
+.fa-7x {
+  font-size: 7em;
+}
+
+.fa-8x {
+  font-size: 8em;
+}
+
+.fa-9x {
+  font-size: 9em;
+}
+
+.fa-10x {
+  font-size: 10em;
+}
+
+.fa-fw {
+  text-align: center;
+  width: 1.25em;
+}
+
+.fa-ul {
+  list-style-type: none;
+  margin-left: 2.5em;
+  padding-left: 0;
+}
+.fa-ul &gt; li {
+  position: relative;
+}
+
+.fa-li {
+  left: -2em;
+  position: absolute;
+  text-align: center;
+  width: 2em;
+  line-height: inherit;
+}
+
+.fa-border {
+  border: solid 0.08em #eee;
+  border-radius: 0.1em;
+  padding: 0.2em 0.25em 0.15em;
+}
+
+.fa-pull-left {
+  float: left;
+}
+
+.fa-pull-right {
+  float: right;
+}
+
+.fa.fa-pull-left,
+.fas.fa-pull-left,
+.far.fa-pull-left,
+.fal.fa-pull-left,
+.fab.fa-pull-left {
+  margin-right: 0.3em;
+}
+.fa.fa-pull-right,
+.fas.fa-pull-right,
+.far.fa-pull-right,
+.fal.fa-pull-right,
+.fab.fa-pull-right {
+  margin-left: 0.3em;
+}
+
+.fa-spin {
+  -webkit-animation: fa-spin 2s infinite linear;
+          animation: fa-spin 2s infinite linear;
+}
+
+.fa-pulse {
+  -webkit-animation: fa-spin 1s infinite steps(8);
+          animation: fa-spin 1s infinite steps(8);
+}
+
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.fa-rotate-90 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.fa-rotate-180 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.fa-rotate-270 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+.fa-flip-horizontal {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+}
+
+.fa-flip-vertical {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  -webkit-transform: scale(1, -1);
+          transform: scale(1, -1);
+}
+
+.fa-flip-both, .fa-flip-horizontal.fa-flip-vertical {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  -webkit-transform: scale(-1, -1);
+          transform: scale(-1, -1);
+}
+
+:root .fa-rotate-90,
+:root .fa-rotate-180,
+:root .fa-rotate-270,
+:root .fa-flip-horizontal,
+:root .fa-flip-vertical,
+:root .fa-flip-both {
+  -webkit-filter: none;
+          filter: none;
+}
+
+.fa-stack {
+  display: inline-block;
+  height: 2em;
+  position: relative;
+  width: 2.5em;
+}
+
+.fa-stack-1x,
+.fa-stack-2x {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.svg-inline--fa.fa-stack-1x {
+  height: 1em;
+  width: 1.25em;
+}
+.svg-inline--fa.fa-stack-2x {
+  height: 2em;
+  width: 2.5em;
+}
+
+.fa-inverse {
+  color: #fff;
+}
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.sr-only-focusable:active, .sr-only-focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+.svg-inline--fa .fa-primary {
+  fill: var(--fa-primary-color, currentColor);
+  opacity: 1;
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa .fa-secondary {
+  fill: var(--fa-secondary-color, currentColor);
+  opacity: 0.4;
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-primary {
+  opacity: 0.4;
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-secondary {
+  opacity: 1;
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa mask .fa-primary,
+.svg-inline--fa mask .fa-secondary {
+  fill: black;
+}
+
+.fad.fa-inverse {
+  color: #fff;
+}&lt;/style&gt;&lt;link rel="icon" type="image/png" href="/favicon.png"&gt;&lt;meta name="viewport" content="width=device-width,initial-scale=1"&gt;&lt;meta name="twitter:card" content="summary_large_image"&gt;&lt;meta name="twitter:creator" content="@abstractapi"&gt;&lt;meta name="twitter:title" content="Mocky: The world easiest &amp;amp; fastest tool to mock your APIs"&gt;&lt;meta name="twitter:description" content="Don't wait for the backend to be ready, generate custom API responses with Mocky and start working on your application straightaway"&gt;&lt;meta name="twitter:image" content="https://designer.mocky.io/assets/mocky-social-twitter-final.png"&gt;&lt;script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-427M31JQDD&amp;amp;l=dataLayer&amp;amp;cx=c&amp;amp;gtm=45He5441v9122630619za200&amp;amp;tag_exp=102788824~102803279~102813109~102887800~102926062~102975949~103016951~103021830~103027016~103047562"&gt;&lt;/script&gt;&lt;script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-W326PRF"&gt;&lt;/script&gt;&lt;script&gt;!function(e,t,a,n,g){e[n]=e[n]||[],e[n].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});var m=t.getElementsByTagName(a)[0],r=t.createElement(a);r.async=!0,r.src="https://www.googletagmanager.com/gtm.js?id=GTM-W326PRF",m.parentNode.insertBefore(r,m)}(window,document,"script","dataLayer")&lt;/script&gt;&lt;link href="/css/socicon.css" rel="stylesheet" media="all"&gt;&lt;link href="/css/iconsmind.css" rel="stylesheet" media="all"&gt;&lt;link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"&gt;&lt;link href="https://cdn.tabmo.io/creatives/upload/mocky/1591639861875/theme-charcoal.css" rel="stylesheet" media="all" crossorigin="anonymous"&gt;&lt;link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,400&amp;amp;display=swap" rel="stylesheet"&gt;&lt;link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&amp;amp;display=swap" rel="stylesheet"&gt;&lt;link href="/static/css/2.f87e9f44.chunk.css" rel="stylesheet"&gt;&lt;link href="/static/css/main.7ca13aa7.chunk.css" rel="stylesheet"&gt;&lt;/head&gt;&lt;body&gt;&lt;noscript&gt;&lt;iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W326PRF" height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;&lt;/noscript&gt;&lt;noscript&gt;You need to enable JavaScript to run this app.&lt;/noscript&gt;&lt;div id="root"&gt;&lt;div class="nav-container"&gt;&lt;div&gt;&lt;nav class="bar bar-1"&gt;&lt;div class="container"&gt;&lt;div class="row"&gt;&lt;div class="col-lg-1 hidden-xs col-md-3"&gt;&lt;div class="bar__module"&gt;&lt;a href="/" class="logo-link"&gt;&lt;img class="logo" alt="logo" src="/static/media/logo-dark.2d24ebf2.png" style="max-height: 30px;"&gt;&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="col-lg-11 col-md-12 text-right text-left-xs text-left-sm"&gt;&lt;div class="bar__module"&gt;&lt;a class="btn btn--sm type--uppercase hidden-xs" href="/manage"&gt;&lt;span class="btn__text"&gt;Manage my mocks&lt;/span&gt;&lt;/a&gt;&lt;a class="btn btn--sm type--uppercase btn--primary" href="/design"&gt;&lt;span class="btn__text"&gt;New mock&lt;/span&gt;&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/nav&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="main-container"&gt;&lt;section class="text-center space--xxs"&gt;&lt;div class="container"&gt;&lt;div class="row"&gt;&lt;div class="col-md-10 col-lg-8"&gt;&lt;h1&gt;Mocky&lt;/h1&gt;&lt;p class="lead"&gt;&lt;span&gt;&lt;span&gt;The world easiest &amp;amp; fastest tool b&lt;/span&gt;&lt;span class="typed-cursor"&gt;|&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/section&gt;&lt;section class="switchable feature-large space--xxs"&gt;&lt;div class="container"&gt;&lt;div class="row justify-content-around"&gt;&lt;div class="col-md-6"&gt;&lt;img alt="curl -X PUT https://www.mocky.io/v2/5185415ba171ea3a00704eed" src="/static/media/carbon.784472b5.svg"&gt;&lt;/div&gt;&lt;div class="col-md-6 col-lg-5"&gt;&lt;div class="switchable__text"&gt;&lt;h2&gt;API Mocks for Free&lt;/h2&gt;&lt;p class="lead"&gt;Don't wait for the backend to be ready, generate custom API responses with Mocky and start working on your application straightaway&lt;/p&gt;&lt;a href="/design"&gt;Start designing your mock »&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/section&gt;&lt;section class="imagebg space--xxs" data-gradient-bg="#4876BD,#5448BD,#8F48BD,#BD48B1"&gt;&lt;div class="container"&gt;&lt;div class="row"&gt;&lt;div class="col-md-12"&gt;&lt;div class="cta cta-1 cta--horizontal boxed boxed--border text-center-xs"&gt;&lt;div class="row justify-content-center p-5"&gt;&lt;div class="col-lg-3"&gt;&lt;h4&gt;No signup&lt;/h4&gt;&lt;/div&gt;&lt;div class="col-lg-4"&gt;&lt;p class="lead"&gt;Start designing your mock&lt;br&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class="col-lg-4 text-center"&gt;&lt;a class="btn btn--primary type--uppercase" href="/design"&gt;&lt;span class="btn__text"&gt;NEW MOCK&lt;/span&gt;&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/section&gt;&lt;section class="space--xs"&gt;&lt;div class="container"&gt;&lt;div class="row"&gt;&lt;div class="col-md-6 col-lg-3"&gt;&lt;div class="feature feature-6"&gt;&lt;i class="icon color--primary icon-Money-2 icon--sm"&gt;&lt;/i&gt;&lt;h5&gt;Free &amp;amp; Unlimited&lt;/h5&gt;&lt;p&gt;Mocky is free to use, no ads, no hidden subscriptions or service limits. Your mocks will be available &lt;strong&gt;forever&lt;/strong&gt; if you call it at least on time per year, but without any &lt;a href="/faq"&gt;guarantee&lt;/a&gt;.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="col-md-6 col-lg-3"&gt;&lt;div class="feature feature-6"&gt;&lt;i class="icon color--primary icon-Box-Full icon--sm"&gt;&lt;/i&gt;&lt;h5&gt;Total control&lt;/h5&gt;&lt;p&gt;New in Mocky, you can now update or delete your mocks at any time.&lt;br&gt;The next release will go further and offer you request inspector and cloud-based mock management.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="col-md-6 col-lg-3"&gt;&lt;div class="feature feature-6"&gt;&lt;i class="icon color--primary icon-Chemical icon--sm"&gt;&lt;/i&gt;&lt;h5&gt;Developer Friendly&lt;/h5&gt;&lt;p&gt;Mocky is compatible with JS, Mobile and Server applications, featuring CORS, JSONP and GZIP responses.&lt;br&gt;No authentication, just call it!&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="col-md-6 col-lg-3"&gt;&lt;div class="feature feature-6"&gt;&lt;i class="icon color--primary icon-Code-Window icon--sm"&gt;&lt;/i&gt;&lt;h5&gt;Open Source&amp;nbsp;&lt;/h5&gt;&lt;p&gt;Mocky is distributed with Apache 2 licence on &lt;a href="https://github.com/julien-lafont/Mocky" rel="noreferrer noopener" target="_blank"&gt;Github&lt;/a&gt;. Community contributions are welcome! Ready-to-use distributions will be available to host your own Mocky instance.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/section&gt;&lt;div role="dialog" class="cookie--block"&gt;&lt;div class="cookie--body"&gt;&lt;p class="cookie--description"&gt;By using our website you agree to our &lt;a href="/policies/cookies"&gt;Cookie Policy&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class="cookie--close"&gt;&lt;button type="button"&gt;&lt;svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" class="svg-inline--fa fa-times fa-w-11 fa-lg " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"&gt;&lt;path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/button&gt;&lt;/div&gt;&lt;/div&gt;&lt;footer class="text-center-xs space--xs"&gt;&lt;div class="container"&gt;&lt;div class="row"&gt;&lt;div class="col-sm-6"&gt;&lt;ul class="list-inline"&gt;&lt;li&gt;&lt;a href="/faq"&gt;&lt;span class="h6 type--uppercase"&gt;&lt;p&gt;FAQ&lt;/p&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class="col-sm-6 text-right text-center-xs"&gt;&lt;ul class="social-list list-inline list--hover"&gt;&lt;li&gt;&lt;a href="https://github.com/julien-lafont/Mocky" rel="noopener noreferrer" target="_blank"&gt;Be an &lt;strong&gt;awesome Hacker&lt;/strong&gt;, fork me &lt;i class="socicon socicon-github icon icon--xs"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.twitter.com/abstractapi" rel="noopener noreferrer" target="_blank"&gt;Made with &lt;strong&gt;love&lt;/strong&gt; by @abstractapi &lt;i class="socicon socicon-twitter icon icon--xs"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="row"&gt;&lt;div class="col-sm-4"&gt;&lt;span class="type--fine-print"&gt;© &lt;span class="update-year"&gt;2023&lt;/span&gt; Mocky.io&lt;/span&gt;&lt;a class="type--fine-print" href="/faq"&gt;Privacy Policy&lt;/a&gt;&lt;a class="type--fine-print" href="/policies/cookies"&gt;Cookie Policy&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/footer&gt;&lt;/div&gt;&lt;/div&gt;&lt;script&gt;!function(e){function r(r){for(var n,l,f=r[0],i=r[1],a=r[2],p=0,s=[];p&lt;f.length;p++)l=f[p],Object.prototype.hasOwnProperty.call(o,l)&amp;&amp;o[l]&amp;&amp;s.push(o[l][0]),o[l]=0;for(n in i)Object.prototype.hasOwnProperty.call(i,n)&amp;&amp;(e[n]=i[n]);for(c&amp;&amp;c(r);s.length;)s.shift()();return u.push.apply(u,a||[]),t()}function t(){for(var e,r=0;r&lt;u.length;r++){for(var t=u[r],n=!0,f=1;f&lt;t.length;f++){var i=t[f];0!==o[i]&amp;&amp;(n=!1)}n&amp;&amp;(u.splice(r--,1),e=l(l.s=t[0]))}return e}var n={},o={1:0},u=[];function l(r){if(n[r])return n[r].exports;var t=n[r]={i:r,l:!1,exports:{}};return e[r].call(t.exports,t,t.exports,l),t.l=!0,t.exports}l.m=e,l.c=n,l.d=function(e,r,t){l.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},l.r=function(e){"undefined"!=typeof Symbol&amp;&amp;Symbol.toStringTag&amp;&amp;Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},l.t=function(e,r){if(1&amp;r&amp;&amp;(e=l(e)),8&amp;r)return e;if(4&amp;r&amp;&amp;"object"==typeof e&amp;&amp;e&amp;&amp;e.__esModule)return e;var t=Object.create(null);if(l.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:e}),2&amp;r&amp;&amp;"string"!=typeof e)for(var n in e)l.d(t,n,function(r){return e[r]}.bind(null,n));return t},l.n=function(e){var r=e&amp;&amp;e.__esModule?function(){return e.default}:function(){return e};return l.d(r,"a",r),r},l.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},l.p="/";var f=this.webpackJsonpmocky=this.webpackJsonpmocky||[],i=f.push.bind(f);f.push=r,f=f.slice();for(var a=0;a&lt;f.length;a++)r(f[a]);var c=i;t()}([])&lt;/script&gt;&lt;script src="/static/js/2.8d393772.chunk.js"&gt;&lt;/script&gt;&lt;script src="/static/js/main.7b057219.chunk.js"&gt;&lt;/script&gt;&lt;style type="text/css" data-typed-js-css="true"&gt;
+        .typed-cursor{
+          opacity: 1;
+        }
+        .typed-cursor.typed-cursor--blink{
+          animation: typedjsBlink 0.7s infinite;
+          -webkit-animation: typedjsBlink 0.7s infinite;
+                  animation: typedjsBlink 0.7s infinite;
+        }
+        @keyframes typedjsBlink{
+          50% { opacity: 0.0; }
+        }
+        @-webkit-keyframes typedjsBlink{
+          0% { opacity: 1; }
+          50% { opacity: 0.0; }
+          100% { opacity: 1; }
+        }
+      &lt;/style&gt;&lt;/body&gt;&lt;/html&gt;</msg>
+<arg>Page source is: ${page_source}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-08T12:10:27.404646" elapsed="0.001012"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-04-08T12:10:27.426752" level="INFO">Current page contains text 'Mocky'.</msg>
+<arg>Mocky</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-04-08T12:10:27.405838" elapsed="0.021372"/>
+</kw>
+<status status="PASS" start="2025-04-08T12:10:27.397162" elapsed="0.030610"/>
+</test>
+<test id="s1-s4-t3" name="Get URL" line="25">
+<kw name="Get Location" owner="SeleniumLibrary">
+<msg time="2025-04-08T12:10:27.435812" level="INFO">${url} = https://designer.mocky.io/</msg>
+<var>${url}</var>
+<doc>Returns the current browser window URL.</doc>
+<status status="PASS" start="2025-04-08T12:10:27.428740" elapsed="0.007167"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>URL is: ${url}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-08T12:10:27.436174" elapsed="0.000459"/>
+</kw>
+<kw name="Location Should Be" owner="SeleniumLibrary">
+<msg time="2025-04-08T12:10:27.443493" level="INFO">Current location is 'https://designer.mocky.io/'.</msg>
+<arg>${url}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<status status="PASS" start="2025-04-08T12:10:27.436869" elapsed="0.007093"/>
+</kw>
+<kw name="Location Should Contain" owner="SeleniumLibrary">
+<msg time="2025-04-08T12:10:27.452218" level="INFO">Current location contains 'mocky'.</msg>
+<arg>mocky</arg>
+<doc>Verifies that the current URL contains ``expected``.</doc>
+<status status="PASS" start="2025-04-08T12:10:27.444659" elapsed="0.007669"/>
+</kw>
+<status status="PASS" start="2025-04-08T12:10:27.428218" elapsed="0.024276"/>
+</test>
+<test id="s1-s4-t4" name="User Information" line="32">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-04-08T12:10:27.453419" level="INFO">Opening url 'https://petstore.octoperf.com/actions/Account.action?newAccountForm='</msg>
+<arg>https://petstore.octoperf.com/actions/Account.action?newAccountForm=</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-04-08T12:10:27.453148" elapsed="0.954167"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-04-08T12:10:28.419149" level="INFO">Page title is 'JPetStore Demo'.</msg>
+<arg>JPetStore Demo</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2025-04-08T12:10:28.407686" elapsed="0.011661"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-04-08T12:10:28.440270" level="INFO">Current page contains text 'Account Information'.</msg>
+<arg>Account Information</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-04-08T12:10:28.419561" elapsed="0.020826"/>
+</kw>
+<kw name="Location Should Contain" owner="SeleniumLibrary">
+<msg time="2025-04-08T12:10:28.449209" level="INFO">Current location contains 'petstore'.</msg>
+<arg>petstore</arg>
+<doc>Verifies that the current URL contains ``expected``.</doc>
+<status status="PASS" start="2025-04-08T12:10:28.440573" elapsed="0.008750"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=(//div[@id="Content"]//following::*[self::input or self::select])[1]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-04-08T12:10:28.449510" elapsed="0.032312"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-08T12:10:28.482326" level="INFO">Typing text '004' into text field 'xpath=(//div[@id="Content"]//following::*[self::input or self::select])[1]'.</msg>
+<arg>xpath=(//div[@id="Content"]//following::*[self::input or self::select])[1]</arg>
+<arg>004</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-08T12:10:28.482030" elapsed="0.102134"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-08T12:10:28.584732" level="INFO">Typing text 'Bss@2233' into text field 'xpath=(//div[@id="Content"]//following::*[self::input or self::select])[2]'.</msg>
+<arg>xpath=(//div[@id="Content"]//following::*[self::input or self::select])[2]</arg>
+<arg>Bss@2233</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-08T12:10:28.584387" elapsed="0.148389"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-08T12:10:28.733362" level="INFO">Typing text 'Bss@2233' into text field 'xpath=(//div[@id="Content"]//following::*[self::input or self::select])[3]'.</msg>
+<arg>xpath=(//div[@id="Content"]//following::*[self::input or self::select])[3]</arg>
+<arg>Bss@2233</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-08T12:10:28.733052" elapsed="0.143793"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-08T12:10:28.877457" level="INFO">Typing text 'amyma' into text field 'xpath=(//div[@id="Content"]//following::*[self::input or self::select])[4]'.</msg>
+<arg>xpath=(//div[@id="Content"]//following::*[self::input or self::select])[4]</arg>
+<arg>amyma</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-08T12:10:28.877091" elapsed="0.134729"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-08T12:10:29.012406" level="INFO">Typing text 'usman' into text field 'xpath=(//div[@id="Content"]//following::*[self::input or self::select])[5]'.</msg>
+<arg>xpath=(//div[@id="Content"]//following::*[self::input or self::select])[5]</arg>
+<arg>usman</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-08T12:10:29.012099" elapsed="0.128087"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-08T12:10:29.140695" level="INFO">Typing text 'amymarajpoot1@gmail.com' into text field 'xpath=(//div[@id="Content"]//following::*[self::input or self::select])[6]'.</msg>
+<arg>xpath=(//div[@id="Content"]//following::*[self::input or self::select])[6]</arg>
+<arg>amymarajpoot1@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-08T12:10:29.140401" elapsed="0.148578"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-08T12:10:29.289469" level="INFO">Typing text '066490445688' into text field 'xpath=(//div[@id="Content"]//following::*[self::input or self::select])[7]'.</msg>
+<arg>xpath=(//div[@id="Content"]//following::*[self::input or self::select])[7]</arg>
+<arg>066490445688</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-08T12:10:29.289188" elapsed="0.136263"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-08T12:10:29.426054" level="INFO">Typing text '23 A main road, lhg' into text field 'xpath=(//div[@id="Content"]//following::*[self::input or self::select])[8]'.</msg>
+<arg>xpath=(//div[@id="Content"]//following::*[self::input or self::select])[8]</arg>
+<arg>23 A main road, lhg</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-08T12:10:29.425746" elapsed="0.178059"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-08T12:10:29.604344" level="INFO">Typing text '23 A main road, lhg' into text field 'xpath=(//div[@id="Content"]//following::*[self::input or self::select])[9]'.</msg>
+<arg>xpath=(//div[@id="Content"]//following::*[self::input or self::select])[9]</arg>
+<arg>23 A main road, lhg</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-08T12:10:29.604029" elapsed="0.153981"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-08T12:10:29.758668" level="INFO">Typing text 'Lahore' into text field 'xpath=(//div[@id="Content"]//following::*[self::input or self::select])[10]'.</msg>
+<arg>xpath=(//div[@id="Content"]//following::*[self::input or self::select])[10]</arg>
+<arg>Lahore</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-08T12:10:29.758351" elapsed="0.126967"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-08T12:10:29.885828" level="INFO">Typing text 'punjab' into text field 'xpath=(//div[@id="Content"]//following::*[self::input or self::select])[11]'.</msg>
+<arg>xpath=(//div[@id="Content"]//following::*[self::input or self::select])[11]</arg>
+<arg>punjab</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-08T12:10:29.885534" elapsed="0.141322"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-08T12:10:30.027532" level="INFO">Typing text '23456' into text field 'xpath=(//div[@id="Content"]//following::*[self::input or self::select])[12]'.</msg>
+<arg>xpath=(//div[@id="Content"]//following::*[self::input or self::select])[12]</arg>
+<arg>23456</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-08T12:10:30.027200" elapsed="0.133596"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-08T12:10:30.161336" level="INFO">Typing text 'Pakistan' into text field 'xpath=(//div[@id="Content"]//following::*[self::input or self::select])[13]'.</msg>
+<arg>xpath=(//div[@id="Content"]//following::*[self::input or self::select])[13]</arg>
+<arg>Pakistan</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-08T12:10:30.161035" elapsed="0.136287"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2025-04-08T12:10:30.297944" level="INFO">Selecting options from selection list 'xpath=(//div[@id="Content"]//following::*[self::input or self::select])[14]' by label english.</msg>
+<arg>xpath=(//div[@id="Content"]//following::*[self::input or self::select])[14]</arg>
+<arg>english</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2025-04-08T12:10:30.297561" elapsed="0.064653"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2025-04-08T12:10:30.362780" level="INFO">Selecting options from selection list 'xpath=(//div[@id="Content"]//following::*[self::input or self::select])[15]' by label DOGS.</msg>
+<arg>xpath=(//div[@id="Content"]//following::*[self::input or self::select])[15]</arg>
+<arg>DOGS</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2025-04-08T12:10:30.362452" elapsed="0.098392"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2025-04-08T12:10:30.461618" level="INFO">Selecting checkbox 'xpath=(//div[@id="Content"]//following::*[self::input or self::select])[16]'.</msg>
+<arg>xpath=(//div[@id="Content"]//following::*[self::input or self::select])[16]</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-08T12:10:30.461208" elapsed="0.112440"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-08T12:10:40.574632" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-08T12:10:30.573886" elapsed="10.000895"/>
+</kw>
+<kw name="Checkbox Should Be Selected" owner="SeleniumLibrary">
+<msg time="2025-04-08T12:10:40.575281" level="INFO">Verifying checkbox 'xpath=(//div[@id="Content"]//following::*[self::input or self::select])[16]' is selected.</msg>
+<arg>xpath=(//div[@id="Content"]//following::*[self::input or self::select])[16]</arg>
+<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
+<status status="PASS" start="2025-04-08T12:10:40.574997" elapsed="0.038591"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2025-04-08T12:10:40.614098" level="INFO">Selecting checkbox 'xpath=(//div[@id="Content"]//following::*[self::input or self::select])[17]'.</msg>
+<arg>xpath=(//div[@id="Content"]//following::*[self::input or self::select])[17]</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-08T12:10:40.613814" elapsed="0.124816"/>
+</kw>
+<kw name="Checkbox Should Be Selected" owner="SeleniumLibrary">
+<msg time="2025-04-08T12:10:40.739453" level="INFO">Verifying checkbox 'xpath=(//div[@id="Content"]//following::*[self::input or self::select])[17]' is selected.</msg>
+<arg>xpath=(//div[@id="Content"]//following::*[self::input or self::select])[17]</arg>
+<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
+<status status="PASS" start="2025-04-08T12:10:40.738945" elapsed="0.039828"/>
+</kw>
+<kw name="Element Should Be Enabled" owner="SeleniumLibrary">
+<arg>xpath=(//div[@id="Content"]//following::*[self::input or self::select])[18]</arg>
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-04-08T12:10:40.778970" elapsed="0.039333"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-04-08T12:10:40.818777" level="INFO">Clicking button 'xpath=(//div[@id="Content"]//following::*[self::input or self::select])[18]'.</msg>
+<arg>xpath=(//div[@id="Content"]//following::*[self::input or self::select])[18]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-08T12:10:40.818516" elapsed="0.500150"/>
+</kw>
+<kw name="Go Back" owner="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" start="2025-04-08T12:10:41.318987" elapsed="0.031568"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-08T12:10:51.351757" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-08T12:10:41.350766" elapsed="10.001469"/>
+</kw>
+<status status="PASS" start="2025-04-08T12:10:27.452754" elapsed="23.900123"/>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-04-08T12:10:51.355993" elapsed="2.171181"/>
+</kw>
+<status status="PASS" start="2025-04-08T12:10:20.302998" elapsed="33.224316"/>
+</suite>
+<doc>[https://pabot.org/?ref=log|Pabot] result from 4 executions.</doc>
+<status status="FAIL" start="2025-04-08T12:08:49.623000" elapsed="123.905000"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="9" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Navigation" id="s1" pass="1" fail="0" skip="0">Navigation</stat>
+<stat name="Suites" id="s1" pass="9" fail="1" skip="0">Suites</stat>
+<stat name="Browser" id="s1-s1" pass="1" fail="1" skip="0">Suites.Browser</stat>
+<stat name="Frames" id="s1-s2" pass="3" fail="0" skip="0">Suites.Frames</stat>
+<stat name="Navigation" id="s1-s3" pass="1" fail="0" skip="0">Suites.Navigation</stat>
+<stat name="Practice" id="s1-s4" pass="4" fail="0" skip="0">Suites.Practice</stat>
 </suite>
 </statistics>
 <errors>
