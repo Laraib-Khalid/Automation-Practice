@@ -3,4 +3,4 @@ pip install -U robotframework-pabot
 
 
 Calling:
-pabot --processes 2 Automation/*.robot
+pabot --processes 2 --outputdir Results Automation/*.robot
