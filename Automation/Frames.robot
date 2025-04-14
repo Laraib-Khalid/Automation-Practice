@@ -19,7 +19,6 @@ Library    SeleniumLibrary
 #    Select From List By Index    //select[@class="product_sort_container"]    3
 #    Sleep    3s
 #
-#
 #Handling List
 #    Execute Javascript      window.open("https://only-testing-blog.blogspot.com/");
 #    Switch Window       title=Only Testing
