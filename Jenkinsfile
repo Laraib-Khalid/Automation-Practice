@@ -31,5 +31,5 @@ pipeline {
         }
         failure {
             echo 'Build or tests failed. Artifacts will not be archived.'
-       
+        }
 }
