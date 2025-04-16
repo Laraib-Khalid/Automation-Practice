@@ -31,7 +31,7 @@ pipeline {
     }
     post {
         success {
-            archiveArtifacts artifacts: 'Results/**/*.xml, Results/**/*.html, Results/**/*.log', fingerprint: true
+            archiveArtifacts artifacts: 'artifacts/**/*.*', fingerprint: true
             echo 'Artifacts archived successfully.'
         }
         failure {
