@@ -21,4 +21,15 @@ pipeline {
             }
         }
     }
+    post {
+        success {
+            archiveArtifacts artifacts: 'artifacts/**/*.*', fingerprint: true
+            echo 'Artifacts archived successfully.'
+
+            // Optional: Deploy to staging (manual or script-based)
+            // Example: copy artifacts to shared folder or deploy using script
+        }
+        failure {
+            echo 'Build or tests failed. Artifacts will not be archived.'
+       
 }
