@@ -2,6 +2,14 @@ pipeline {
     agent any
 
     stages {
+        stage('Clean Results') {
+            steps {
+                bat '''
+                    if exist Results rmdir /s /q Results
+                    mkdir Results
+                '''
+            }
+        }
         stage('Set up Python Env') {
             steps {
                 bat '''
