@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    parameters {
+        choice choices: ['dev', 'prod'], name: 'select_environment'
+    }
+
     stages {
         stage('Clean Results') {
             steps {
@@ -9,6 +13,7 @@ pipeline {
                 '''
             }
         }
+
         stage('Set up Python Env') {
             steps {
                 bat '''
@@ -26,15 +31,35 @@ pipeline {
                     pabot --processes 2 --outputdir Results Automation\\*.robot
                 '''
             }
+            post {
+                success {
+                    dir('Results') {
+                        stash name: 'Artifacts', includes: '**/*.*'
+                    }
+                    echo 'Results stashed successfully.'
+                }
+                failure {
+                    echo 'Tests failed. Nothing stashed.'
+                }
+            }
         }
-    }
-    post {
-        success {
-            archiveArtifacts artifacts: 'Results/**/*.*', onlyIfSuccessful: true, fingerprint: true
-            echo 'Artifacts archived successfully.'
-        }
-        failure {
-            echo 'Build or tests failed. Artifacts will not be archived.'
+
+        stage('Deploy Dev') {
+            when {
+                expression { params.select_environment == 'dev' }
+            }
+            agent {
+                label 'Window2'
+            }
+            steps {
+                dir('Results') {
+                    unstash 'Artifacts'
+                }
+                bat '''
+                    cd Results
+                    for %%f in (*) do jar -xvf %%f
+                '''
+            }
         }
     }
 }
