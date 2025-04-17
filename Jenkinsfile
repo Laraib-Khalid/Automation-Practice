@@ -7,6 +7,7 @@ pipeline {
                 bat '''
                     if exist Results rmdir /s /q Results
                     mkdir Results
+                    mkdir Artifacts
                 '''
             }
         }
@@ -31,7 +32,7 @@ pipeline {
     }
     post {
         success {
-            archiveArtifacts artifacts: 'Results/**/*.xml, Results/**/*.html, Results/**/*.log', fingerprint: true
+            archiveArtifacts artifacts: 'Artifacts/**/*.*', onlyIfSuccessful: true, fingerprint: true
             echo 'Artifacts archived successfully.'
         }
         failure {
