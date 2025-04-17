@@ -62,5 +62,27 @@ pipeline {
                 }
             }
         }
+        stage('Deploy Prod') {
+            when {
+                expression { params.select_environment == 'prod' }
+            }
+            agent {
+                label 'Window2'
+            }
+            steps {
+                timeout(time:5, unit:'DAYS')
+                {
+                    input message "Deployment Approved?"
+                }
+                dir('Results') {
+                    unstash 'Artifacts'
+                    bat '''
+                        echo Listing Results contents:
+                        dir
+                    '''
+                    // If needed, add your logic to deploy or send files from here
+                }
+            }
+        }
     }
 }
