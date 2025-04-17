@@ -54,11 +54,12 @@ pipeline {
             steps {
                 dir('Results') {
                     unstash 'Artifacts'
+                    bat '''
+                        echo Listing Results contents:
+                        dir
+                    '''
+                    // If needed, add your logic to deploy or send files from here
                 }
-                bat '''
-                    cd Results
-                    for %%f in (*) do jar -xvf %%f
-                '''
             }
         }
     }
