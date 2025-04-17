@@ -29,4 +29,13 @@ pipeline {
             }
         }
     }
+    post {
+        success {
+            archiveArtifacts artifacts: 'Results/**/*.xml, Results/**/*.html, Results/**/*.log', fingerprint: true
+            echo 'Artifacts archived successfully.'
+        }
+        failure {
+            echo 'Build or tests failed. Artifacts will not be archived.'
+        }
+    }
 }
