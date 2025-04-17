@@ -72,7 +72,7 @@ pipeline {
             steps {
                 timeout(time:5, unit:'DAYS')
                 {
-                    input message "Deployment Approved?"
+                    input message: "Deployment Approved?"
                 }
                 dir('Results') {
                     unstash 'Artifacts'
