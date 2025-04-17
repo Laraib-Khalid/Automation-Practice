@@ -45,9 +45,8 @@ pipeline {
         }
 
         stage('Deploy Dev') {
-            when {
-                expression { params.select_environment == 'dev' }
-            }
+            when {expression {params.select_environment == 'dev'}
+                 beforeAgent true}
             agent {
                 label 'Window2'
             }
@@ -65,7 +64,7 @@ pipeline {
         stage('Deploy Prod') {
             when {
                 expression { params.select_environment == 'prod' }
-            }
+                    beforeAgent true}
             agent {
                 label 'Window2'
             }
