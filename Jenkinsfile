@@ -28,7 +28,7 @@ pipeline {
             steps {
                 bat '''
                     call venv\\Scripts\\activate.bat
-                    pabot --processes 2 --outputdir Results Automation\\*.robot
+                    abot --processes 2 --outputdir Results Automation\\*.robot
                 '''
             }
             post {
@@ -87,10 +87,7 @@ pipeline {
     post
     {
         failure{
-            echo "Failure!"
-            mail to: 'laraib.khalid@bssuniversal.com',
-                subject:"FAILED: ${env.JOB_NAME} - Build #${env.BUILD_NUMBER}",
-                body: "Job '${env.JOB_NAME}' (${env.BUILD_URL}) failed."
+           emailext body: 'Job \'${env.JOB_NAME}\' (${env.BUILD_URL}) failed.', subject: 'FAILED: ${env.JOB_NAME} - Build #${env.BUILD_NUMBER}', to: 'laraib.khalid@bssuniversal.com'
         }
         success{
             echo "All Stages Successful!"
