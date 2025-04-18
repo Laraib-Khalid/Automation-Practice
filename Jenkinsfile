@@ -89,8 +89,7 @@ pipeline {
              echo "Failure!"
              mail to: 'laraib.khalid@bssuniversal.com',
                 subject:"FAILED: ${env.JOB_NAME} - Build #${env.BUILD_NUMBER}",
-                body: "$PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS:
-                    Check console output at $BUILD_URL to view the results."
+                body: "$PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS: Check console output at $BUILD_URL to view the results."
 				
         }
         success {
