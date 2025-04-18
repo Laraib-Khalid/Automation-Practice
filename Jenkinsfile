@@ -86,11 +86,12 @@ pipeline {
     }
     post {
         failure {
-            emailext(
-                body: "Job '${env.JOB_NAME}' (${env.BUILD_URL}) failed.",
-                subject: "FAILED: ${env.JOB_NAME} - Build #${env.BUILD_NUMBER}",
-                to: 'laraib.khalid@bssuniversal.com'
-            )
+             echo "Failure!"
+             mail to: 'laraib.khalid@bssuniversal.com',
+                subject:"FAILED: ${env.JOB_NAME} - Build #${env.BUILD_NUMBER}",
+                body: "$PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS:
+                    Check console output at $BUILD_URL to view the results."
+				
         }
         success {
             echo "All Stages Successful!"
