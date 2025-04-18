@@ -28,7 +28,7 @@ pipeline {
             steps {
                 bat '''
                     call venv\\Scripts\\activate.bat
-                    pabot --processes 2 --outputdir Results Automation\\*.robot
+                    abot --processes 2 --outputdir Results Automation\\*.robot
                 '''
             }
             post {
@@ -82,6 +82,18 @@ pipeline {
                     // If needed, add your logic to deploy or send files from here
                 }
             }
+        }
+    }
+    post
+    {
+        failure{
+            echo "Failure!"
+            mailto: "laraib.khalid@bssuniversal.com",
+                subject:"FAILED: ${env.JOB_NAME} - Build #${env.BUILD_NUMBER}",
+                body: "Job '${env.JOB_NAME}' (${env.BUILD_URL}) failed."
+        }
+        success{
+            echo "All Stages Successful!"
         }
     }
 }
