@@ -88,7 +88,7 @@ pipeline {
     {
         failure{
             echo "Failure!"
-            mailto: 'laraib.khalid@bssuniversal.com',
+            mail to: 'laraib.khalid@bssuniversal.com',
                 subject:"FAILED: ${env.JOB_NAME} - Build #${env.BUILD_NUMBER}",
                 body: "Job '${env.JOB_NAME}' (${env.BUILD_URL}) failed."
         }
