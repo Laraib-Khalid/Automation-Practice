@@ -28,7 +28,7 @@ pipeline {
             steps {
                 bat '''
                     call venv\\Scripts\\activate.bat
-                    abot --processes 2 --outputdir Results Automation\\*.robot
+                    pabot --processes 2 --outputdir Results Automation\\*.robot
                 '''
             }
             post {
