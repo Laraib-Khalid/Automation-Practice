@@ -84,13 +84,17 @@ pipeline {
             }
         }
     }
-    post
-    {
-        failure{
-           emailext body: 'Job \'${env.JOB_NAME}\' (${env.BUILD_URL}) failed.', subject: 'FAILED: ${env.JOB_NAME} - Build #${env.BUILD_NUMBER}', to: 'laraib.khalid@bssuniversal.com'
+    post {
+        failure {
+            emailext(
+                body: "Job '${env.JOB_NAME}' (${env.BUILD_URL}) failed.",
+                subject: "FAILED: ${env.JOB_NAME} - Build #${env.BUILD_NUMBER}",
+                to: 'laraib.khalid@bssuniversal.com'
+            )
         }
-        success{
+        success {
             echo "All Stages Successful!"
         }
     }
+
 }
