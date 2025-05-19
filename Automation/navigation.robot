@@ -5,13 +5,13 @@ Library     SeleniumLibrary
 Navigation
 #    Set Selenium Speed    3
     Set Selenium Implicit Wait    10
+
     Open Browser    https://petstore.octoperf.com/actions/Catalog.action    Chrome
     Maximize Browser Window
     Click Link    xpath=//div[@id="Menu"]//descendant::a[2]
     Go Back
     ${TEXT}    Get Text    xpath=//a[text()='Sign In']
     Log To Console   Link is: ${TEXT}
-
     ${FISH}=   Get WebElement       xpath=//*[@id="QuickLinks"]/a[1]
     Click Link        ${FISH}
     Go Back
@@ -21,7 +21,7 @@ Navigation
     ${TEXT_DATA}    Get Text    xpath=//div[@id="CTA"]
     Log To Console   Link Data is: ${TEXT_DATA}
     
-    ${VALUE}    get element attribute    xpath=//input[@name='searchProducts']    value
+    ${VALUE}=    get element attribute    xpath=//input[@name='searchProducts']    value
     Log to console  Value is:${VALUE}
 #    Go Back
 

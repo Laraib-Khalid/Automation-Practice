@@ -1,12 +1,22 @@
 *** Settings ***
 Library     SeleniumLibrary
 Library    Collections
-Library    XML
 
 *** Variables ***
 
 *** Keywords ***
+New Tab Should Open
+    [Arguments]    ${old_handles}
+    ${new_handles}=    Get Window Handles
+    ${new_tab_count}=    Get Length    ${new_handles}
+    ${old_tab_count}=    Get Length    ${old_handles}
+    Should Be True    ${new_tab_count} > ${old_tab_count}    New tab did not open.
 
+#Two Popups Should Appear
+#    [Arguments]    ${old_handles}
+#    ${current_handles}=    Get Window Handles
+#    ${expected}=    Evaluate    len(${old_handles}) + 2
+#    Length Should Be    ${current_handles}    ${expected}
 
 *** Test Cases ***
 Test Case 1: Open Browser
@@ -102,6 +112,8 @@ Test Case 15: Static Web Table
         Log To Console   3rd Column is:${table_third_col.text}
 
     END
+
+
     
 Test Case 16: Dynamic Web Table
     Scroll Element Into View    xpath=//table[@id="taskTable"]
@@ -139,6 +151,8 @@ Test Case 17: Pagination Web Table
     Select Checkbox    xpath=//table[@id="productTable"]/tbody/tr[1]/td[4]/input
     Select Checkbox    xpath=//table[@id="productTable"]/tbody/tr[4]/td[4]/input
 
+    ${table_data}=      Get Table Cell    //table[@id="productTable"]    2    2
+    Log To Console    ${table_data}
 Test Case 18: Form Filling
     Input Text    xpath=//input[@name="input1"]    Laraib Khalid Section 1
     Click Button    xpath=//button[@id="btn1"]
@@ -206,12 +220,52 @@ Test Case 25: Handle Confirmation Alert
     
 Test Case 26: Handle Prompt Alert
     ${name}=    Set Variable    Laraib Khalid
-
     Click Button    xpath=//button[text()='Prompt Alert']
-
     Input Text Into Alert    ${name}
-    Handle Alert    accept
-
     Element Text Should Be    id=demo    Hello ${name}! How are you today?
+    Log To Console    Hello ${name}! How are you today?
+
+Test Case 27: Open New Tab
+
+    # Step 1: Get window handles before click
+    ${before_click_handles}=    Get Window Handles
+    # Step 2: Click the button that opens a new tab
+    Click Button    xpath=//button[text()='New Tab']
+
+    # Step 3: Wait for new tab to appear
+    Wait Until Keyword Succeeds    5x    1s    New Tab Should Open    ${before_click_handles}
+    Switch Window    SDET-QA Blog
+    ${title}=    Get Title
+    Log To Console    New Tab Title is: ${title}
+
+Test Case 28: Switch Back to First Tab
+    Switch Window    Automation Testing Practice
+
+Test Case 30: Open popup
+    ${before_handles}=    Get Window Handles
+    ${count_before_handles}=    Get Length    ${before_handles}
+#    ${main_window}=    Get From List    ${before_handles}    0
+
+    Click Button    xpath=//button[text()='Popup Windows']
+
+#    Wait Until Keyword Succeeds    10x    1s    Two Popups Should Appear    ${before_handles}
+
+    ${after_handles}=    Get Window Handles
+    ${count_after_handles}=    Get Length    ${after_handles}
+#    ${new_windows}=    Evaluate    [w for w in ${after_handles} if w not in ${before_handles}]
+    Log To Console    After clicking Popup Count is: ${count_after_handles}
+    Should Be True    ${count_after_handles} > ${count_before_handles}   New tab did not open.
+    Switch Window    Selenium
+    ${title}=    Get Title
+    Log To Console    New Tab Title is: ${title}
+#    FOR    ${popup_handle}    IN    @{new_windows}
+#        Switch Window    handle=${popup_handle}
+#        Page Should Contain Element    xpath=//h1
+#        Close Window
+#    END
+#
+#    Switch Window    handle=${main_window}
+
+
 #    26 Nov 1990
     Sleep    20s
