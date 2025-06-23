@@ -41,6 +41,7 @@ Test Case 4: Select Checkbox
 Test Case 5: Select Dropdown
     Select From List By Value    id=country     france
 
+
 Test Case 6: Select Multi-Select List
     Select From List By Value    id=colors    red   green   blue
 #    Select All From List    id=colors
@@ -60,6 +61,7 @@ Test Case 9: Enter Specific Date
 #    Input Text    id=datepicker    05/23/2025
     Click Element    id=datepicker
     Click Element    xpath=//a[@data-date="21"]
+    
 Test Case 10: Select Date From Calendar
     Click Element    id=txtDate
     Select From List By Label    xpath=//select[@class="ui-datepicker-month"]       Nov
