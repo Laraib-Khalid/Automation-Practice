@@ -9,3 +9,5 @@ pabot --processes 2 --outputdir Results Automation/*.robot
 
 Robot Calling:
 robot -d Results Automation/browser.robot
+
+robot -d Results --loglevel TRACE Automation/browser.robot
